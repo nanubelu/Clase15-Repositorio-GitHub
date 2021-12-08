@@ -1,127 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- SEO -->
     <title>Contacto</title>
-    <meta name="Descripcion" content="Si tenes dudas sobre algun producto o queres hablar con nosotros, dejanos tu contacto.">
-    <meta name="Keywords" content="CONTACTO">
+    <meta
+      name="Descripcion"
+      content="Si tenes dudas sobre algun producto o queres hablar con nosotros, dejanos tu contacto."
+    />
+    <meta name="Keywords" content="CONTACTO" />
     <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Quicksand&effect=neon|outline|emboss|shadow-multiple"
+    />
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css" />
     <!--Icons-->
-    <link href="/Clase 13 - Servidores, Seguridad y SEO para tu sitio/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
-    
-</head>
-<body>
+    <link
+      href="/Clase 13 - Servidores, Seguridad y SEO para tu sitio/fontawesome-free-5.15.4-web/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body>
+    <!-- Header -->
     <header class="header__main">
+      <div class="header__logo">
+        <img src="../assets/logo2.png" />
+      </div>
 
-        <div class="header__logo">
-            <img src="../assets/logo2.png">
-        
-        </div>
-
-        <nav>
-        
-            <ul class="header__navigation">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./categorias.html">Categorias</a></li>
-                <li><a href="./ofertas.html">Ofertas</a></li>
-                <li><a href="./sucursales.html">Sucursales</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-                   
-        </nav>               
-    
+      <nav>
+        <ul class="header__navigation">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./categorias.html">Categorias</a></li>
+          <li><a href="./ofertas.html">Ofertas</a></li>
+          <li><a href="./sucursales.html">Sucursales</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <h3>Contactate con nosotros</h3>
-    <br>
-    
-    <form>
-                    
-            <div>
-                <label>Nombre</label>
-                <input type="text" required></div>
-                <br>
-                <div><label>Email</label>
-                <input type="email" placeholder="Escribe tu email" required></div>
-                <br>
-                <div><label>Telefono</label>
-                <input type="text"></div>
-                <br>
-                <div><label>Mensaje</label>
-                <textarea name="message" rows="5" cols="21"></textarea></div>
-                <br>
-                <div><label>¿Desea recibir nuestra newsletter?</label>
-                <input type="checkbox"></div>
-                <br>
+    <!-- Main -->
+    <main>
+      <!--Contact-->
+      <section>
+        <h3>Contactate con nosotros</h3>
+        <br />
 
-            <div>
-                <label>Motivo de la consulta</label>
-                <select name="Motivo de la consulta">
-                    <option value="Min">Minorista</option>
-                    <option value="May">Mayorista</option>
-                    <option value="Fr">Franquicia</option>
-                </select></div>
-                <br>
-                <input class="buttonsFormulario" type="submit" value="Enviar">
-                <input class="buttonsFormulario" type="reset" value="Borrar">
-        
-    </form>
-    <br>
+        <form>
+          <div>
+            <label>Nombre</label>
+            <input type="text" required />
+          </div>
+          <br />
+          <div>
+            <label>Email</label>
+            <input type="email" placeholder="Escribe tu email" required />
+          </div>
+          <br />
+          <div><label>Telefono</label> <input type="text" /></div>
+          <br />
+          <div>
+            <label>Mensaje</label>
+            <textarea name="message" rows="5" cols="21"></textarea>
+          </div>
+          <br />
+          <div>
+            <label>¿Desea recibir nuestra newsletter?</label>
+            <input type="checkbox" />
+          </div>
+          <br />
+
+          <div>
+            <label>Motivo de la consulta</label>
+            <select name="Motivo de la consulta">
+              <option value="Min">Minorista</option>
+              <option value="May">Mayorista</option>
+              <option value="Fr">Franquicia</option>
+            </select>
+          </div>
+          <br />
+          <input class="buttonsFormulario" type="submit" value="Enviar" />
+          <input class="buttonsFormulario" type="reset" value="Borrar" />
+        </form>
+      </section>
+    </main>
+    <br />
 
     <!-- Footer -->
     <footer class="bg-white">
-        <div class="container py-4">
-            <div class="row py-3">
-            <div class="col-lg-3 col-md-5 mb-4 mb-lg-0">
-            </div>
-            <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+      <div class="container py-4">
+        <div class="row py-3">
+          <div class="col-lg-3 col-md-5 mb-4 mb-lg-0"></div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
             <h6 class="text__h6">Ofertas</h6>
             <ul class="list-unstyled mb-0">
-                <li class="mb-2"><a href="#" class="footer__text">Hasta 30%</a></li>
-                <li class="mb-2"><a href="#" class="footer__text">Hasta 40%</a></li>
-                <li class="mb-2"><a href="#" class="footer__text">Hasta 50%</a></li>
+              <li class="mb-2">
+                <a href="#" class="footer__text">Hasta 30%</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="footer__text">Hasta 40%</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="footer__text">Hasta 50%</a>
+              </li>
             </ul>
-            </div>
-            <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
             <h6 class="text__h6">Nosotros</h6>
             <ul class="list-unstyled mb-0">
-                <li class="mb-2"><a href="#" class="footer__text">Sucursales</a></li>
-                <li class="mb-2"><a href="#" class="footer__text">Sobre Nosotros</a></li>
-                <li class="mb-2"><a href="#" class="footer__text">Contacto</a></li>
-                <li class="mb-2"><a href="#" class="footer__text">Politica de Privacidad</a></li>
+              <li class="mb-2">
+                <a href="#" class="footer__text">Sucursales</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="footer__text">Sobre Nosotros</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="footer__text">Contacto</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="footer__text">Politica de Privacidad</a>
+              </li>
             </ul>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-lg-0">
+          </div>
+          <div class="col-lg-4 col-md-6 mb-lg-0">
             <h6 class="text__h6">Newsletter</h6>
             <p class="footer__text mb-4">Seguinos en nuestras redes sociales</p>
             <div class="footer__redesSociales fa-2x">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram-square"></i>
-                <i class="fab fa-youtube"></i>
-                <i class="fab fa-google"></i>
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram-square"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-google"></i>
             </div>
-            </div>
+          </div>
         </div>
-        </div>
-
+      </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

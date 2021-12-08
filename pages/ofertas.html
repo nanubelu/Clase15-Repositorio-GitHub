@@ -1,172 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- SEO -->
     <title>Ofertas</title>
-    <meta name="Descripcion" content="¡Tenemos ofertas todos los dias! Enterate mas suscribiendote con tu email.">
-    <meta name="Keywords" content="OFERTAS">
+    <meta
+      name="Descripcion"
+      content="¡Tenemos ofertas todos los dias! Enterate mas suscribiendote con tu email."
+    />
+    <meta name="Keywords" content="OFERTAS" />
     <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Quicksand&effect=neon|outline|emboss|shadow-multiple"
+    />
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css" />
     <!--Icons-->
-    <link href="/Clase 13 - Servidores, Seguridad y SEO para tu sitio/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
-
-</head>
-<body>
-  
+    <link
+      href="/Clase 13 - Servidores, Seguridad y SEO para tu sitio/fontawesome-free-5.15.4-web/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
     <header class="header__main">
+      <div class="header__logo">
+        <img src="../assets/logo2.png" />
+      </div>
 
-        <div class="header__logo">
-            <img src="../assets/logo2.png">
-        
-        </div>
-
-
-        <nav>
-        
-            <ul class="header__navigation">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./categorias.html">Categorias</a></li>
-                <li><a href="./ofertas.html">Ofertas</a></li>
-                <li><a href="./sucursales.html">Sucursales</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-                   
-        </nav>  
-
+      <nav>
+        <ul class="header__navigation">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./categorias.html">Categorias</a></li>
+          <li><a href="./ofertas.html">Ofertas</a></li>
+          <li><a href="./sucursales.html">Sucursales</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <div>
-
-        <ul class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-          <li class="breadcrumb-item"><a href="#">Ofertas</a></li>
-          <li class="breadcrumb-item active">50% OFF</li>
-        </ul>
-  
-    </div>
-
-    <div class="categorias__cards">
-
-        <div class="card">
-          <img class="card-img-top" src="../assets/oferta-1.webp" alt="Card image">
-          <div class="card-body">
-            <h4 class="card-title">Rapunzel</h4>
-            <p class="card-text"><del>$2000</del>$1000</p>
-            <a href="#" class="btn btn btn-primary btn-sm">Comprar</a>
-          </div>
+    <!-- Main -->
+    <main>
+      <!--Breadcrumb-->
+      <section>
+        <div>
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="#">Ofertas</a></li>
+            <li class="breadcrumb-item active">50% OFF</li>
+          </ul>
         </div>
+      </section>
 
-        <div class="card">
-            <img class="card-img-top" src="../assets/oferta-2.webp" alt="Card image">
+      <!--Cards-Ofertas-->
+      <section>
+        <div class="categorias__cards">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="../assets/oferta-1.webp"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Rapunzel</h4>
+              <p class="card-text"><del>$2000</del>$1000</p>
+              <a href="#" class="btn btn btn-primary btn-sm">Comprar</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="../assets/oferta-2.webp"
+              alt="Card image"
+            />
             <div class="card-body">
               <h4 class="card-title">Blancanieves</h4>
               <p class="card-text"><del>$2000</del>$1000</p>
               <a href="#" class="btn btn btn-primary btn-sm">Comprar</a>
             </div>
-        </div>
+          </div>
 
-        <div class="card">
-            <img class="card-img-top" src="../assets/oferta-3.webp" alt="Card image">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="../assets/oferta-3.webp"
+              alt="Card image"
+            />
             <div class="card-body">
               <h4 class="card-title">Moana</h4>
               <p class="card-text"><del>$1000</del>$500</p>
               <a href="#" class="btn btn btn-primary btn-sm">Comprar</a>
             </div>
-        </div>
+          </div>
 
-        <div class="card">
-            <img class="card-img-top" src="../assets/oferta-4.webp" alt="Card image">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="../assets/oferta-4.webp"
+              alt="Card image"
+            />
             <div class="card-body">
               <h4 class="card-title">Bella</h4>
               <p class="card-text"><del>$2000</del>$1000</p>
               <a href="#" class="btn btn btn-primary btn-sm">Comprar</a>
             </div>
-        </div>
+          </div>
 
-        <div class="card">
-            <img class="card-img-top" src="../assets/oferta-5.webp" alt="Card image">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="../assets/oferta-5.webp"
+              alt="Card image"
+            />
             <div class="card-body">
               <h4 class="card-title">Aurora</h4>
               <p class="card-text"><del>$2000</del>$1000</p>
               <a href="#" class="btn btn btn-primary btn-sm">Comprar</a>
             </div>
-        </div>
+          </div>
 
-        <div class="card">
-            <img class="card-img-top" src="../assets/oferta-6.webp" alt="Card image">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="../assets/oferta-6.webp"
+              alt="Card image"
+            />
             <div class="card-body">
               <h4 class="card-title">Elsa</h4>
               <p class="card-text"><del>$2000</del>$1000</p>
               <a href="#" class="btn btn btn-primary btn-sm">Comprar</a>
             </div>
-        </div>
+          </div>
 
-        <div class="card">
-            <img class="card-img-top" src="../assets/oferta-7.webp" alt="Card image">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="../assets/oferta-7.webp"
+              alt="Card image"
+            />
             <div class="card-body">
               <h4 class="card-title">Alicia</h4>
               <p class="card-text"><del>$2000</del>$1000</p>
               <a href="#" class="btn btn btn-primary btn-sm">Comprar</a>
             </div>
-        </div>
+          </div>
 
-        <div class="card">
-            <img class="card-img-top" src="../assets/oferta-8.webp" alt="Card image">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="../assets/oferta-8.webp"
+              alt="Card image"
+            />
             <div class="card-body">
               <h4 class="card-title">Ana</h4>
               <p class="card-text"><del>$2000</del>$1000</p>
               <a href="#" class="btn btn btn-primary btn-sm">Comprar</a>
             </div>
+          </div>
         </div>
-    
-    </div>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-white">
       <div class="container py-4">
-          <div class="row py-3">
-          <div class="col-lg-3 col-md-5 mb-4 mb-lg-0">
+        <div class="row py-3">
+          <div class="col-lg-3 col-md-5 mb-4 mb-lg-0"></div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h6 class="text__h6">Ofertas</h6>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a href="#" class="footer__text">Hasta 30%</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="footer__text">Hasta 40%</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="footer__text">Hasta 50%</a>
+              </li>
+            </ul>
           </div>
           <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-          <h6 class="text__h6">Ofertas</h6>
-          <ul class="list-unstyled mb-0">
-              <li class="mb-2"><a href="#" class="footer__text">Hasta 30%</a></li>
-              <li class="mb-2"><a href="#" class="footer__text">Hasta 40%</a></li>
-              <li class="mb-2"><a href="#" class="footer__text">Hasta 50%</a></li>
-          </ul>
-          </div>
-          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-          <h6 class="text__h6">Nosotros</h6>
-          <ul class="list-unstyled mb-0">
-              <li class="mb-2"><a href="#" class="footer__text">Sucursales</a></li>
-              <li class="mb-2"><a href="#" class="footer__text">Sobre Nosotros</a></li>
-              <li class="mb-2"><a href="#" class="footer__text">Contacto</a></li>
-              <li class="mb-2"><a href="#" class="footer__text">Politica de Privacidad</a></li>
-          </ul>
+            <h6 class="text__h6">Nosotros</h6>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a href="#" class="footer__text">Sucursales</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="footer__text">Sobre Nosotros</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="footer__text">Contacto</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="footer__text">Politica de Privacidad</a>
+              </li>
+            </ul>
           </div>
           <div class="col-lg-4 col-md-6 mb-lg-0">
-          <h6 class="text__h6">Newsletter</h6>
-          <p class="footer__text mb-4">Seguinos en nuestras redes sociales</p>
-          <div class="footer__redesSociales fa-2x">
+            <h6 class="text__h6">Newsletter</h6>
+            <p class="footer__text mb-4">Seguinos en nuestras redes sociales</p>
+            <div class="footer__redesSociales fa-2x">
               <i class="fab fa-facebook"></i>
               <i class="fab fa-twitter"></i>
               <i class="fab fa-instagram-square"></i>
               <i class="fab fa-youtube"></i>
               <i class="fab fa-google"></i>
+            </div>
           </div>
-          </div>
+        </div>
       </div>
-      </div>
-
     </footer>
+  </body>
+</html>
