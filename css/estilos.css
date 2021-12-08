@@ -3,58 +3,63 @@
   padding: 0%;
 }
 
+/** MEDIA QUERYS **/
+/** Tablet size **/
+@media only screen and (max-width: 768px) {
+  .main, .products__cards {
+    width: 80%;
+    padding: 0;
+  }
+}
+/** Mobile size **/
+@media only screen and (max-width: 320px) {
+  .main {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .categorias__cards {
+    display: flex;
+  }
+}
 /** HEADER **/
 .header__main {
-  display: -ms-grid;
   display: grid;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: white;
   padding: 20px;
-      grid-template-areas: "header__logo header__navigation";
+  grid-template-areas: "header__logo header__navigation";
   background: #64E291;
   text-shadow: 2px 2px 5px black;
 }
 
 .header__logo {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: header__logo;
 }
-
 .header__logo img {
   width: 140px;
 }
 
 .header__navigation {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  justify-content: right;
   grid-area: header__navigation;
-  -webkit-transform: translate(5px, 15px);
-          transform: translate(5px, 15px);
+  transform: translate(5px, 15px);
   text-shadow: 2px 2px 5px black;
 }
-
 .header__navigation li {
   margin: 3px;
   padding: 5px;
   font-size: 20px;
   border-radius: 5px;
 }
-
 .header__navigation li a {
   color: white;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: bold;
   text-decoration: none;
 }
-
 .header__navigation li:hover > ul {
   display: block;
 }
@@ -62,7 +67,7 @@
 .header__submenu {
   list-style: none;
   background-color: #64E291;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   display: none;
   position: absolute;
   padding: 5px;
@@ -76,10 +81,8 @@
 }
 
 .maincontent__logos {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 15px;
 }
@@ -94,21 +97,16 @@
   height: 250px;
   margin: 15px;
   background-color: #297F87;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-size: cover;
   position: relative;
   cursor: pointer;
-  -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
-  -webkit-box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
-          box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
+  box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
   overflow: hidden;
   color: white;
   font-family: "Mochiy Pop P One", sans-serif;
 }
-
 .products__cards img {
   height: 100%;
   width: 100%;
@@ -116,20 +114,16 @@
   top: 0;
   left: 0;
   z-index: 0;
-  -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
-
 .products__cards h1 {
   font-size: 20px;
 }
 
 .products__cards:hover {
   /*   background-color:#99aeff; */
-  -webkit-box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.64);
-          box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.64);
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.64);
+  transform: scale(1.05);
 }
 
 .products__cards:hover img {
@@ -148,10 +142,8 @@
 }
 
 .categorias__cards {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 15px;
 }
@@ -165,10 +157,8 @@
 }
 
 .card:hover {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.05);
 }
 
 .card-title {
@@ -180,7 +170,6 @@
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
 }
-
 .card-text del {
   font-weight: normal;
 }
@@ -236,12 +225,8 @@ h3 {
   font-size: 20px;
   font-weight: bold;
   color: #64E291;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 /** SUCURSALES **/
@@ -250,18 +235,13 @@ h3 {
 }
 
 .sucursales {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  justify-content: left;
+  flex-wrap: nowrap;
   grid-area: sucursales;
 }
-
 .sucursales div {
   padding-left: 20px;
 }
+
 /*# sourceMappingURL=estilos.css.map */

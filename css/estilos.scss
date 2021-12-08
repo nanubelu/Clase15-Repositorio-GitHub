@@ -6,6 +6,28 @@
     padding: 0%;
 }
 
+/** MEDIA QUERYS **/
+/** Tablet size **/
+@media only screen and (max-width:768px) {
+    .main, .products__cards  {
+        width: 80%;
+        padding: 0;
+    }
+}
+
+/** Mobile size **/
+@media only screen and (max-width:320px) {
+    .main {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .categorias__cards {
+        display: flex;
+    }
+}
+
 /** HEADER **/
 .header__main {
     display: grid;
@@ -257,9 +279,4 @@ h3 {
             padding-left: 20px;
         }
 }
-
-
-
-
-
 
