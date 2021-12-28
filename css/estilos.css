@@ -239,4 +239,52 @@ h3 {
   padding-left: 20px;
 }
 
+/** CONTACTO **/
+.contact-wrapper > * {
+  padding: 1em;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.contact-form form .block {
+  grid-column: 1/4;
+}
+.contact-form form label {
+  display: block;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 16px;
+}
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+.contact-form form button, .contact-form form input, .contact-form form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #297F87;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 14px;
+  border-bottom: 1px solid #00A19D;
+}
+.contact-form form button {
+  background: #297F87;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+  color: white;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: #00A19D;
+  color: #fff;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+
 /*# sourceMappingURL=estilos.css.map */

@@ -63,49 +63,41 @@
     <!-- Main -->
     <main>
       <!--Contact-->
-      <section>
-        <h3>Contactate con nosotros</h3>
-        <br />
-
-        <form>
-          <div>
-            <label>Nombre</label>
-            <input type="text" required />
-          </div>
-          <br />
-          <div>
-            <label>Email</label>
-            <input type="email" placeholder="Escribe tu email" required />
-          </div>
-          <br />
-          <div><label>Telefono</label> <input type="text" /></div>
-          <br />
-          <div>
-            <label>Mensaje</label>
-            <textarea name="message" rows="5" cols="21"></textarea>
-          </div>
-          <br />
-          <div>
-            <label>¿Desea recibir nuestra newsletter?</label>
-            <input type="checkbox" />
-          </div>
-          <br />
-
-          <div>
-            <label>Motivo de la consulta</label>
-            <select name="Motivo de la consulta">
-              <option value="Min">Minorista</option>
-              <option value="May">Mayorista</option>
-              <option value="Fr">Franquicia</option>
-            </select>
-          </div>
-          <br />
-          <input class="buttonsFormulario" type="submit" value="Enviar" />
-          <input class="buttonsFormulario" type="reset" value="Borrar" />
-        </form>
+      
+      <section class="content">
+        <div>
+  
+          <div class="contact-wrapper">
+              <div class="contact-form">
+                <h3>Contactate con nosotros</h3>
+                <form action="">
+                  <p>
+                    <label>Nombre*</label>
+                    <input type="text" name="fullname" required>
+                  </p>
+                  <p>
+                    <label>Correo Electronico*</label>
+                    <input type="email" name="email" required>
+                  </p>
+                  <p>
+                    <label>Telefono</label>
+                    <input type="tel" name="phone">
+                  </p>
+                  <p class="block">
+                    <label>Mensaje</label> 
+                    <textarea name="message" rows="3"></textarea>
+                  </p>
+                  <p class="block">
+                      <button>
+                        Send
+                      </button>
+                  </p>
+                </form>
+              </div>
+        </div>
       </section>
     </main>
-    <br />
+    
 
     <!-- Footer -->
     <footer class="bg-white">
@@ -130,13 +122,13 @@
             <h6 class="text__h6">Nosotros</h6>
             <ul class="list-unstyled mb-0">
               <li class="mb-2">
-                <a href="#" class="footer__text">Sucursales</a>
+                <a href="./pages/sucursales.html" class="footer__text">Sucursales</a>
               </li>
               <li class="mb-2">
                 <a href="#" class="footer__text">Sobre Nosotros</a>
               </li>
               <li class="mb-2">
-                <a href="#" class="footer__text">Contacto</a>
+                <a href="#" class="/pages/contacto.html">Contacto</a>
               </li>
               <li class="mb-2">
                 <a href="#" class="footer__text">Politica de Privacidad</a>
@@ -144,8 +136,7 @@
             </ul>
           </div>
           <div class="col-lg-4 col-md-6 mb-lg-0">
-            <h6 class="text__h6">Newsletter</h6>
-            <p class="footer__text mb-4">Seguinos en nuestras redes sociales</p>
+            <h6 class="text__h6">Seguinos en nuestras redes sociales</h6>
             <div class="footer__redesSociales fa-2x">
               <i class="fab fa-facebook"></i>
               <i class="fab fa-twitter"></i>
